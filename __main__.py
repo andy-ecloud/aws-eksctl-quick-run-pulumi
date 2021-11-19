@@ -101,7 +101,7 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 sudo mv /tmp/eksctl /usr/local/bin
 
 # run cluster
-eksctl create cluster --name test-cluster-gogogo --region us-east-1 --version 1.17 --nodegroup-name linux-nodes --node-type t3.micro --nodes 3
+eksctl create cluster --name test-cluster-gogogo --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1d --version 1.17 --nodegroup-name linux-nodes --node-type t3.micro --nodes 3
 
 """
 
